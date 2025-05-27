@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "esnext",  // Përdorim esnext për mbështetje të sintaksës më të re
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "strict": true,  // Aktivizojmë modalitetin e strikt për kontroll më të fortë
+    "allowJs": true,  // Mundësojmë që të përdorim JavaScript në projektin me TypeScript
+    "esModuleInterop": true,  // Aktivizojmë për të lejuar importimin e moduleve të ES
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
